@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activityHorizontalMargin"
+    android:paddingLeft="@dimen/activityVerticalMargin"
+    android:paddingTop="@dimen/activityHorizontalMargin"
+    android:paddingRight="@dimen/activityVerticalMargin"
+    android:orientation="vertical"
+    tools:ignore="ExtraText">
+    tools:context="com.antonblue16.myasynctaskloader.MainActivity"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/edSearchFilm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.95"
+            android:hint="Cari Film" />
+        <Button
+            android:id="@+id/btnSearchFilm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cari"
+            android:layout_weight="0.04" />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/lvCataogueFilm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+</LinearLayout>
